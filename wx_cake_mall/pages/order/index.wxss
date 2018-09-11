@@ -1,0 +1,222 @@
+/* pages/order/index.wxss */
+
+/*顶部的菜单*/
+
+.menuv {
+  width: 100%;
+  height: 80rpx;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  background: #fff;
+}
+
+.chkmenu {
+  font-size: 28rpx;
+  color: #87D0E3;
+  border-bottom: 1rpx solid #87D0E3;
+  line-height: 80rpx;
+  margin: 0 20rpx;
+  padding: 0 10rpx;
+}
+
+.nochkmenu {
+  font-size: 28rpx;
+  
+  line-height: 80rpx;
+  margin: 0 20rpx;
+  padding: 0 10rpx;
+}
+
+/*订单列表*/
+
+.orderv {
+  width: 100%;
+  min-height: 370rpx;
+  height: auto;
+  background: #fff;
+  margin-top: 30rpx;
+}
+
+.orderno {
+  width: 96%;
+  height: 80rpx;
+  line-height: 80rpx;
+  border-bottom: 1rpx solid #ebebeb;
+  font-size: 25rpx;
+  margin: 0 2%;
+  
+}
+
+.ordergood {
+  width: 96%;
+  height: 200rpx;
+  margin: 0 2%;
+  display: flex;
+  justify-content: flex-start;
+  border-bottom: 1rpx solid #ebebeb;
+}
+
+.goodsimg {
+  width: 160rpx;
+  height: 160rpx;
+  margin: 20rpx;
+  border-radius: 15rpx;
+}
+
+.goodsinfo {
+  width: 100%;
+  height: 200rpx;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.onev {
+  width: 100%;
+  height: 100rpx;
+  display: flex;
+  justify-content: space-between;
+  font-size: 28rpx;
+  line-height: 100rpx;
+}
+
+.twov {
+  width: 100%;
+  height: 100rpx;
+  display: flex;
+  line-height: 100rpx;
+  justify-content: space-between;
+}
+
+.numv {
+  display: flex;
+  font-size: 28rpx;
+}
+
+.numval {
+  color: #87D0E3;
+}
+
+/*操作按钮部分*/
+
+.orderdtv {
+  width: 96%;
+  height: 80rpx;
+  display: flex;
+  justify-content: space-between;
+  border-top: 1rpx solid #ebebeb;
+  margin: 0 2%;
+}
+
+.dtxt {
+  font-size: 22rpx;
+  line-height: 80rpx;
+  width: 350rpx;
+  height: 80rpx;
+  display: inline-flex;
+}
+
+.optv {
+  width: 350rpx;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.huibtn {
+  height: 50rpx;
+  font-size: 25rpx;
+  border: 1rpx solid ;
+  text-align: center;
+  border-radius: 28rpx;
+  line-height: 50rpx;
+  
+  margin: 18rpx 5rpx;
+  padding: 0rpx 20rpx;
+}
+
+.chengbtn {
+  height: 50rpx;
+  font-size: 25rpx;
+  background: #87D0E3;
+  text-align: center;
+  border-radius: 28rpx;
+  line-height: 50rpx;
+  color: #fff;
+  margin: 18rpx 5rpx;
+  padding: 0rpx 20rpx;
+}
+
+/*退款弹窗*/
+
+/*蒙版 */
+
+.mask {
+  width: 750rpx;
+  height: 100%;
+  background: #333;
+  z-index: 10;
+  position: fixed;
+  top: 0;
+  opacity: 0.3;
+}
+
+/*退款层面*/
+
+.choose {
+  display: none;
+  flex-direction: row;
+  align-items: center;
+  background-color: #fff;
+  position: fixed;
+  top: 40%;
+  left: 5%;
+  z-index: 100;
+  width: 90%;
+  height: 40%;
+  box-sizing: border-box;
+  border-radius: 5%;
+}
+
+.closev {
+  width: 95%;
+  height: 50rpx;
+  display: flex;
+  justify-content: flex-end;
+  margin:10rpx 20rpx;
+}
+
+.tiptxt {
+  width: 94%;
+  height: 50rpx;
+  margin: 0 3%;
+  font-size: 28rpx;
+  color: #87D0E3;
+}
+
+.reasonv {
+  width: 94%;
+  height: 200rpx;
+  border: 1rpx solid #ebebeb;
+  margin: 0 3%;
+}
+
+.txtareacss {
+  font-size: 25rpx;
+  width: 98%;
+  height: 100%;
+  margin: 0 1%;
+  line-height: 50rpx;
+}
+
+.quedingbtn {
+  width: 94%;
+  height: 100rpx;
+  margin: 18rpx 3%;
+  background-color: #87D0E3;
+  line-height: 100rpx;
+  color: #fff;
+  text-align: center;
+}

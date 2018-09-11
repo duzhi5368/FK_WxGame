@@ -1,0 +1,33 @@
+<!--pages/shop/index.wxml-->
+
+<!--地图部分-->
+<map id="myMap" longitude="{{jingdu}}" latitude="{{weidu}}" scale="{{scale}}" controls="{{controls}}" bindcontroltap="controltap" markers="{{markers}}" bindmarkertap="markertap" bindregionchange='regionchange' show-location style="width: 100%; height: 300px;"></map>
+
+<!--列表部分-->
+<view class='shoplist'>
+  
+  <!--门店列表-->
+  <block wx:for="{{shoplist}}" wx:key="item" wx:for-index="x">
+    <view class='shopv' bindtap='chkshop' data-id='{{x}}'>
+      <view class='shopinfo'>
+        <view class='shopname'>{{item.name}}</view>
+        <view class='shopaddr' style='margin-top:20rpx;'>门店电话:{{item.tel}}</view>
+        <view class='shopaddr'>{{item.address}}</view>
+      </view>
+      <view class='chkv' bindtap='chkshop' data-id='{{x}}'>
+        <image src='/resources/chkcity.png' class='chkicon' wx:if="{{item.ischk}}"></image>
+      </view>
+    </view>
+  </block>
+
+  <!--暂无门店-->
+  <view class='noshopv' wx:if="{{isnoshop}}">
+    当前区域没有可选门店
+  </view>
+
+</view>
+
+
+
+<!--确定-->
+<view class='btnok' bindtap='okopt'>确定</view>

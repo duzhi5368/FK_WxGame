@@ -1,0 +1,222 @@
+/**index.wxss**/
+
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  color: transparent;
+  display: none;
+}
+
+/*轮播图底部的点转变为线*/
+
+.swiperitem {
+  width: 100%;
+  height: 400rpx;
+}
+
+.slideimage {
+  width: 100%;
+  height: 100%;
+}
+
+.swiperitem .wx-swiper-dots.wx-swiper-dots-horizontal {
+  margin-bottom: 2rpx;
+}
+
+.swiperitem .wx-swiper-dot {
+  width: 120rpx;
+  display: inline-flex;
+  height: 1rpx;
+  margin-left: 5rpx;
+  justify-content: space-between;
+}
+
+.swiperitem .wx-swiper-dot::before {
+  content: '';
+  flex-grow: 1;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 8rpx;
+}
+
+.swiperitem .wx-swiper-dot-active::before {
+  background: #fff;
+}
+
+/*分隔层*/
+
+.fengev {
+  width: 100%;
+  height: 5rpx;
+  clear: both;
+}
+
+/*顶部的MENU部分*/
+
+.tab-h {
+  height: 80rpx;
+  width: 100%;
+  overflow: hidden;
+  font-size: 30rpx;
+  white-space: nowrap;
+  margin-top: 10rpx;
+  background-color: #fff;
+}
+
+/*菜单*/
+
+.tabitem {
+  width: 135rpx;
+  text-align: center;
+  height: 80rpx;
+  margin: 0rpx 15rpx;
+  display: inline-block;
+}
+
+/*选中的菜单*/
+
+.chktabitem {
+  text-align: center;
+  height: 50rpx;
+  color: #87d0e3;
+  margin: 15rpx;
+  display: inline-block;
+  border: 1rpx solid #87d0e3;
+  box-sizing: content-box;
+  font-size: 25rpx;
+  border-radius: 10rpx;
+  line-height: 50rpx;
+  padding: 0rpx 15rpx;
+}
+
+/*未选中的菜单*/
+
+.nochktabitem {
+  text-align: center;
+  margin: 15rpx;
+  height: 80rpx;
+  color: #333;
+  display: inline-block;
+  font-size: 25rpx;
+}
+
+/*蛋糕部分*/
+
+.lcakev {
+  width: 373rpx;
+  height: 460rpx;
+  background-color: #fff;
+  float: left;
+  margin: 2rpx 0rpx 0rpx 2rpx;
+  border-radius: 10rpx;
+}
+
+.rcakev {
+  width: 373rpx;
+  height: 460rpx;
+  background-color: #fff;
+  float: left;
+  margin: 2rpx 0rpx 0rpx 2rpx;
+  border-radius: 10rpx;
+}
+
+/*蛋糕图*/
+
+.caketuv {
+  width: 100%;
+  height: 300rpx;
+  text-align: center;
+}
+
+.caketu {
+  width: 250rpx;
+  height: 250rpx;
+  margin: 25rpx;
+  border-radius: 20rpx;
+}
+
+/*蛋糕名称*/
+
+.cakename {
+  width: 100%;
+  height: 50rpx;
+  font-size: 28rpx;
+  text-align: center;
+}
+
+/*糖度*/
+
+.caketang {
+  width: 100%;
+  height: 50rpx;
+  font-size: 28rpx;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.tiantxt {
+  font-size: 25rpx;
+  color: #999;
+}
+
+.tangicon {
+  width: 40rpx;
+  height: 40rpx;
+}
+
+/*价格层*/
+
+.cakepricev {
+  width: 100%;
+  height: 50rpx;
+  display: flex;
+  justify-content: center;
+  line-height: 50rpx;
+}
+
+.originprice {
+  font-size: 28rpx;
+  color: #ccc;
+  text-decoration: line-through;
+}
+
+.qiancss {
+  float: left;
+  width: 30rpx;
+  height: 30rpx;
+  margin: 12rpx 0;
+}
+
+.qiantxt {
+  font-size: 32rpx;
+  float: left;
+  color: #87d0e3;
+}
+
+/*底部部分*/
+
+.bottomv {
+  width: 100%;
+  height: 10rpx;
+  clear: both;
+}
+
+/*客服按钮*/
+
+.kefuv {
+  position: fixed;
+  z-index: 999;
+  top: 85%;
+  right: 30rpx;
+  width: 100rpx;
+  height: 100rpx;
+  background: #87d0e3;
+  border-radius: 50rpx;
+  border: 0;
+}
+
+.kefuico {
+  width: 60rpx;
+  height: 60rpx;
+  margin: 20rpx -5rpx;
+}

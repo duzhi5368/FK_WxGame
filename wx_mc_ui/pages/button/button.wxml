@@ -1,0 +1,84 @@
+<!--pages/basic.wxml-->
+<view class="container">
+  <!-- h1-h6  -->
+  <view class="h3 text-success text-center">欢迎使用 mc-ui</view>
+  <view class="mc-title mg-md-tb pg-xs">默认按钮
+    <text class="text-success">(defalut)</text>
+  </view>
+  <view class="items pg-md mg-xs-tb">
+    <view class="mg-xs pg-xs">
+      <text class="text-muted text-sm" decode='true'>
+      &lt; button &gt; 这是默认按钮 &lt; / button &gt;
+    </text>
+    </view>
+    <button class="margin-top">这是默认按钮</button>
+  </view>
+  <view class="mc-title mg-md-tb pg-xs">自定义
+    <text class="text-success">(custom)</text>
+  </view>
+  <view class="h5 bg-title pg-xs-lr mg-sm-tb">按钮尺寸(大——>小)</view>
+  <view class="items pg-md mg-xs-tb">
+    <view class="mg-xs pg-xs">
+      <text class="text-muted text-sm" decode='true'>
+      &lt; button class="mc-btn btn-block" &gt;
+       btn-block 
+       &lt; / button &gt;
+    </text>
+    </view>
+    <button class="mc-btn btn-block mg-xs-tb">.btn-block</button>
+    <button class="mc-btn btn-lg mg-xs-tb">.btn-lg</button>
+    <button class="mc-btn btn-md mg-xs-tb">.btn-md</button>
+    <button class="mc-btn btn-sm mg-xs-tb">.btn-sm</button>
+    <button class="mc-btn btn-xs mg-xs-tb">.btn-xs</button>
+  </view>
+  <view class="h5 bg-title pg-xs-lr mg-sm-tb">按钮颜色</view>
+  <view class="items pg-md mg-xs-tb">
+    <view class="mg-xs pg-xs">
+      <text class="text-muted text-sm" decode='true'>
+        &lt; button class="mc-btn btn-block bg-theme" &gt;
+        配合bg-color来完成背景色 
+        &lt; / button &gt;
+
+        注:btn-size往往会配合bg-**使用，这里bg-**
+      </text>
+    </view>
+      <button class="mc-btn btn-block mg-xs-tb btn-theme">.btn-block .btn-theme</button>
+      <button class="mc-btn btn-block mg-xs-tb btn-primary">.btn-block .btn-primary</button>
+      <button class="mc-btn btn-block mg-xs-tb btn-success">.btn-block .btn-success</button>
+      <button class="mc-btn btn-block mg-xs-tb btn-info">.btn-block .btn-info</button>
+      <button class="mc-btn btn-block mg-xs-tb btn-warning">.btn-block .btn-warning</button>
+      <button class="mc-btn btn-block mg-xs-tb btn-danger">.btn-block .btn-danger</button>
+  </view>
+  <view class="h5 bg-title pg-xs-lr mg-sm-tb">按钮边框</view>
+  <view class="items pg-md mg-xs-tb">
+    <view class="mg-xs pg-xs">
+      <text class="text-muted text-sm" decode='true'>
+        &lt; button class="mc-btn btn-block btn-angles" &gt;
+          直角 
+        &lt; / button &gt;
+      </text>
+    </view>
+    <button class="mc-btn btn-block mg-xs-tb btn-angles">.btn-angles</button>
+  </view>
+  <view class="h5 bg-title pg-xs-lr mg-sm-tb">按钮图标</view>
+  <view class="items pg-md mg-xs-tb">
+    <view class="mg-xs pg-xs">
+      <text class="text-muted text-sm" decode='true'>
+        &lt; button class="mc-btn btn-block btn-angles" &gt;
+           &lt;icon class="iconfont icon-accessory"&gt;&lt;/icon&gt;
+           &lt;text&gt;文字&lt;/text&gt;
+        &lt; / button &gt;
+      </text>
+    </view>
+    <button class="mc-btn btn-block mg-xs-tb btn-angles">
+      <icon class="iconfont icon-people"></icon>
+      <text>文字</text>
+    </button>
+     <button class="mc-btn btn-block mg-xs-tb btn-theme">
+      <icon class="iconfont icon-add"></icon>
+      <text>文字</text>
+    </button>
+  </view>
+
+
+</view>

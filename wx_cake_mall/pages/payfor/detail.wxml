@@ -1,0 +1,152 @@
+<!--pages/payfor/detail.wxml-->
+
+<!--地址信息数据-->
+<view class='hangv'>
+  <image src='/resources/addressico.png' class='iconcss'></image>
+  <view class='addressv' wx:if="{{isdefault}}" bindtap='chkaddress'>
+    <view class='contactor'>{{concator}} {{phone}}</view>
+    <view class='addresstxt'>{{address}}</view>
+  </view>
+  <view class='hangtxt' wx:if="{{!isdefault}}" bindtap='chkaddress' style='color:#999;'>收货地址</view>
+</view>
+<view style='clear:both;'></view>
+
+<!--日期数据-->
+<view class='hangv'>
+  <image src='/resources/dateico.png' class='iconcss'></image>
+  <picker mode="date" bindchange='getdate' class='hangtxt'>
+    <view class='datetxt'>{{date}}</view>
+  </picker>
+</view>
+<view style='clear:both;'></view>
+
+<!--配送时间段数据-->
+<view class='hangv'>
+  <image src='/resources/timeico.png' class='iconcss'></image>
+  <view class='hangtxt'>
+    <input type='text' class='txtcss' bindtap='getsendtime' placeholder='配送时间段' placeholder-class='txttip' value='{{sendtime}}' disabled="true"></input>
+  </view>
+</view>
+<view style='clear:both;height:10rpx;'></view>
+
+<!--商品金额部分-->
+<view class='qianv'>
+  <view class='qiantitle'>商品金额</view>
+  <view class='qianceng'>
+    <image src='/resources/qian.png' class='qianico'></image>
+    <view class='qiantxt'>{{amount}}</view>
+  </view>
+</view>
+<!--优惠券部分-->
+<view class='qianv' bindtap='goquan'>
+  <view class='qiantitle'>优惠券</view>
+  <view class='qianceng'>
+    <image src='/resources/qian.png' class='qianico'></image>
+    <view class='qiantxt'>{{quanprice}}</view>
+    <view style='color:#ccc;margin-left:16rpx;'>>></view>
+  </view>
+</view>
+<!--配送费部分-->
+<view class='qianv'>
+  <view class='qiantitle'>配送费</view>
+  <view class='qianceng'>
+    <image src='/resources/qian.png' class='qianico'></image>
+    <view class='qiantxt'>{{yunfee}}</view>
+  </view>
+</view>
+<!--合计部分-->
+<view class='qianv'>
+  <view class='qiantitle'></view>
+  <view class='qianceng'>
+    <view class='hejitxt'>合计:</view>
+    <image src='/resources/qian.png' class='qianico'></image>
+    <view class='qiantxt'>{{payfor}}</view>
+  </view>
+</view>
+<view style='clear:both;height:10rpx;'></view>
+
+
+<!--配送方式-->
+<view class='sendv'>
+  <view class='sendtitle'>配送方式</view>
+  <view class='sendvv' bindtap='chksend' data-id='1'>
+    <icon type="success" size="25" color="#87D0E3" class='chksend' wx:if="{{sendtype==1}}" />
+    <icon type="circle" size="25" color="#ccc" class='nochksend' wx:if="{{sendtype==2}}" />
+    <view class='sendtype'>店家配送</view>
+  </view>
+  <view class='sendvv' bindtap='chksend' data-id='2'>
+    <icon type="success" size="25" color="#87D0E3" class='chksend' wx:if="{{sendtype==2}}" />
+    <icon type="circle" size="25" color="#ccc" class='nochksend' wx:if="{{sendtype==1}}" />
+    <view class='sendtype'>到店自提</view>
+  </view>
+</view>
+
+
+<!--门店地址-->
+<view class='shopv' wx:if="{{sendtype==2}}">
+  <view class='shoptip' wx:if="{{!isshop}}" bindtap='gochkshop'>请选择提取的门店</view>
+  <block wx:if="{{isshop}}">
+    <view class='shophang'>
+      <view class='shoptitle'>门店名称：</view>
+      <view class='shoptxt'>{{shopname}}({{shoptel}})</view>         
+      <view class='editshop' bindtap='gochkshop'>编辑</view>
+    </view>
+    <view class='shophang'>
+      <view class='shoptitle'>门店地址：</view>
+      <view class='shoptxt'>{{shopaddr}}</view>
+    </view>
+  </block>
+</view>
+
+<!--订单信息-->
+<view class='orderv'>
+  <view class='ordertitle'>订单物品信息</view>
+  <block wx:for="{{cakelist}}" wx:key="item">
+    <view class='ordervv'>
+      <view class='goodsimgv'>
+        <image src='{{item.pic}}' class='goodsimgcss'></image>
+      </view>
+      <view class='goodsinfo'>
+        <view class='goodsname'>
+          <text decode='true'>{{item.name}}</text>
+        </view>
+        <view class='goodsinfo'>
+          <text decode='true'>备注:{{item.remark}}</text>
+        </view>
+        <view class='goodsinfo'>
+          <text decode='true'>规格:{{item.spec}}</text>
+        </view>
+        <view class='goodsinfo'>
+          <text decode='true'>数量:{{item.famount}}</text>
+        </view>
+        <view class='goodsinfo'>
+          <text decode='true'>单价:{{item.price}}元</text>
+        </view>
+      </view>
+    </view>
+  </block>
+</view>
+
+<view style='height:110rpx;width:100%;'></view>
+
+<!--提交订单-->
+<view class='postbtn' bindtap='postorder'>提交订单</view>
+
+
+<!--配送时间段-->
+<modal hidden="{{hidden}}" title="" confirm-text="" cancel-text="" no-cancel="true">
+
+  <!--关闭按钮-->
+  <view class='closev'>
+    <icon type="clear" size="25" color="#ccc" bindtap='hideopt' />
+  </view>
+
+  <!--提示文字-->
+  <view class='titletxtv'>请选择配送时间段</view>
+
+  <!--时间段-->
+  <block wx:for="{{sendtimelist}}" wx:key="item">
+    <view class="{{item.status==0?'notimev':'chktimev'}}" bindtap='chksendtime' data-status='{{item.status}}' data-start='{{item.start}}' data-end='{{item.end}}'>{{item.start}}:00~{{item.end}}:00</view>
+  </block>
+  <view style='clear:both;height:50rpx;'></view>
+</modal>

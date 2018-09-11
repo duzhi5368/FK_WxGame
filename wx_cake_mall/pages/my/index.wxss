@@ -1,0 +1,213 @@
+/* pages/my/index.wxss */
+
+/*顶部微信信息*/
+
+.wxinfov {
+  width: 100%;
+  height: 250rpx;
+  background: #87d0e3;
+  text-align: center;
+}
+
+.wxtxv {
+  padding-top: 30rpx;
+}
+
+.wxtx {
+  width: 130rpx;
+  height: 130rpx;
+  border-radius: 70rpx;
+  border: 10rpx solid #fff;
+}
+
+.wxname {
+  font-size: 28rpx;
+  color: #fff;
+  height: 80rpx;
+}
+
+/*会员卡部分*/
+
+.memberv {
+  width: 100%;
+  /*height: 200rpx;*/
+  height: 355rpx;
+  background: #ebebeb;
+  padding-top: 20rpx;
+}
+
+.cardv {
+  height: 300rpx;
+  margin: 20rpx 5% 20rpx 5%;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  -moz-background-size: 100% 100%;
+  background-image: url("https://www.porvoe.xyz/WXMall/Upload/Files/VipCardBg.jpg");
+  border-radius: 30rpx;
+}
+
+.newcardv {
+  height: 300rpx;
+  margin: 20rpx 5% 20rpx 5%;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  -moz-background-size: 100% 100%;
+  background-image: url("https://www.porvoe.xyz/WXMall/Upload/Files/VipCardBg.jpg");
+  border-radius: 30rpx;
+}
+
+.cardbodyv {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 30rpx;
+  color: #fff;
+}
+
+.topv {
+  width: 94%;
+  height: 100rpx;
+  margin: 0 3%;
+  display: flex;
+  font-size: 28rpx;
+}
+
+.logoimg {
+  width: 80rpx;
+  height: 80rpx;
+  margin-top: 20rpx;
+  border-radius: 40rpx;
+}
+
+.cardinfo {
+  padding-top: 20rpx;
+  padding-left: 20rpx;
+  width: 65%;
+}
+
+.cardtxt {
+  text-align: center;
+  font-size: 100rpx;
+}
+
+.carddibu {
+  width: 94%;
+  height: 80rpx;
+  line-height: 80rpx;
+  margin: 120rpx 3% 30rpx 3%;
+  display: flex;
+  justify-content: space-between;
+  font-size: 28rpx;
+}
+
+.jihuo {
+  line-height: 100rpx;
+  color: #f00;
+}
+
+/*钱部分*/
+
+.qianv {
+  width: 100%;
+  height: 130rpx;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+}
+
+.qiantab {
+  width: 150rpx;
+  height: 130rpx;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.qiantxt {
+  line-height: 60rpx;
+  font-size: 40rpx;
+  color: #87d0e3;
+}
+
+.qiantype {
+  font-size: 25rpx;
+  color: #ccc;
+}
+
+.fengexian {
+  width: 10rpx;
+  height: 80rpx;
+  margin: 10rpx 0;
+  border-right: 2rpx solid #87d0e3;
+}
+
+/*菜单部分*/
+
+.caidaunv {
+  width: 100%;
+  height: auto;
+  background: #fff;
+}
+
+.hangv {
+  width: 96%;
+  height: 90rpx;
+  border-bottom: 1rpx solid #ebebeb;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 2%;
+}
+
+.leftv {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.iconcss {
+  width: 40rpx;
+  height: 40rpx;
+  margin: 25rpx 10rpx;
+}
+
+.hangtxt {
+  font-size: 28rpx;
+  line-height: 90rpx;
+}
+
+.rightv {
+  display: flex;
+  justify-content: flex-start;
+  color: #ccc;
+  font-size: 25rpx;
+  line-height: 90rpx;
+}
+
+/*服务时间*/
+
+.servicedt {
+  width: 100%;
+  height: 100rpx;
+  text-align: center;
+  line-height: 100rpx;
+  font-size: 28rpx;
+}
+
+/*客服按钮*/
+
+.kefuv {
+  position: fixed;
+  z-index: 999;
+  top: 85%;
+  right: 30rpx;
+  width: 100rpx;
+  height: 100rpx;
+  background: #87d0e3;
+  border-radius: 50rpx;
+  border: 0;
+}
+
+.kefuico {
+  width: 60rpx;
+  height: 60rpx;
+  margin: 20rpx -5rpx;
+}

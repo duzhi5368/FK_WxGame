@@ -1,0 +1,64 @@
+<!--pages/shopcart/index.wxml-->
+<block wx:for="{{cartlist}}" wx:key="item">
+  <!--购物车数据-->
+  <view class='goodsv'>
+    <!--关闭按钮-->
+    <view class='closev'>
+      <icon type='circle' size='25' class='closeico' bindtap='chkopt' data-id='{{item.id}}' wx:if="{{!item.ischk}}"></icon>
+      <icon type='success' size='25' class='closeico' bindtap='chkopt' data-id='{{item.id}}' wx:if="{{item.ischk}}"></icon>
+    </view>
+    <!--商品图片-->
+    <view class='goodstuv'>
+      <image src='{{item.pic}}' class='goodstu'></image>
+    </view>
+    <!--基本信息-->
+    <view class='goodsinfo'>
+      <view class='goodsname'>{{item.name}}</view>
+      <view class='paitxt'>备注:{{item.remark}}</view>
+      <view class='bangshu'>规格:{{item.spec}}</view>
+      <!--价格数量-->
+      <view class='pricenumv'>
+        <!--价格部分-->
+        <view class='pricev'>
+          <image src='/resources/qian.png' class='qianico'></image>
+          <view class='qiantxt'>{{item.price}}</view>
+        </view>
+        <!--数量部分-->
+        <view class='numv'>
+          <view class='numtip'>数量:</view>
+          <view class='numceng'>
+            <view class='jianv' bindtap='goodsjian' data-id='{{item.id}}' data-buynum='{{item.famount}}'>-</view>
+            <view class='numtxt'>{{item.famount}}</view>
+            <view class='jiav' bindtap='goodsjia' data-id='{{item.id}}' data-buynum='{{item.famount}}'>+</view>
+          </view>
+        </view>
+        <!--数量部分-->
+      </view>
+    </view>
+  </view>
+</block>
+
+<view style='height:80rpx;width:100%'></view>
+
+<!--底部汇总部分-->
+<view class='huizong'>
+  <!--操作按钮-->
+  <view class='btnoptv' style="display: flex;">
+    <view class='cleartxt' bindtap='clearall' hover-class='cleartip'>清空</view>
+    <view class='newcleartxt' bindtap='deleteopt' hover-class='cleartip'>删除</view>
+  </view>
+  <!--结算按钮-->
+  <view class='jiesuanv'>
+    <view class='sumpricev'>
+      <image src='/resources/qian.png' class='bigqian'></image>
+      <view class='bigqiantxt'>{{sumprice}}</view>
+    </view>
+    <view class='jiesuanbtn' bindtap='jiesuan'>结算</view>
+  </view>
+</view>
+
+
+<!--客服小图标-->
+<button class='kefuv' open-type='contact'>
+  <image src='/resources/kefu.png' class='kefuico'></image>
+</button>

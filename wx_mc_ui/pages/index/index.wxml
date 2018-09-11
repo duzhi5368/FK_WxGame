@@ -1,0 +1,44 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="h3 text-success text-center">欢迎使用 mc-ui</view>
+  <view class="h4 bg-title pg-xs-lr mg-sm-tb">使用方法</view>
+  <view class="text-xs text-indent">在app.wxss中引入mc-ui样式文件即可 </view>
+  <view class="text-xs text-indent">/** app.wxss **/</view>
+  <view class="text-xs text-indent">@import 'mc-ui.wxss';</view>
+
+  <view class="h4 bg-title pg-xs-lr mg-sm-tb">CSS使用</view>
+
+  <view bindtap="navTo" data-url="../basic/basic" class="items pg-md mg-xs-tb">基础样式(base)
+    <icon class="icon-box icon-font icon-zuojiantou pull-right"></icon>
+  </view>
+
+  <view bindtap="navTo" data-url="../layout/layout" class="items pg-md mg-xs-tb">布局与容器(layout)
+    <icon class="icon-box icon-font icon-zuojiantou pull-right"></icon>
+  </view>
+
+  <view bindtap="navTo" data-url="../icon/icon" class="items pg-md mg-xs-tb">字体图标(icon)
+    <icon class="icon-box icon-font icon-zuojiantou pull-right"></icon>
+  </view>
+  <view bindtap="navTo" data-url="../button/button" class="items pg-md mg-xs-tb">按钮(button)
+    <icon class="icon-box icon-font icon-zuojiantou pull-right"></icon>
+  </view>
+  <view bindtap="navTo" data-url="../translate/translate" class="items pg-md mg-xs-tb">过渡动画(translate)
+    <icon class="icon-box icon-font icon-zuojiantou pull-right"></icon>
+  </view>
+  <view bindtap="navTo" data-url="../loading/loading" class="items pg-md mg-xs-tb">加载动画(loading)
+    <icon class="icon-box icon-font icon-zuojiantou pull-right"></icon>
+  </view>
+  <view bindtap="navTo" data-url="../list/list" class="items pg-md mg-xs-tb">列表(list)
+    <icon class="icon-box icon-font icon-zuojiantou pull-right"></icon>
+  </view>
+  <view bindtap="navTo" data-url="../form/form" class="items pg-md mg-xs-tb">表单(form)
+    <icon class="icon-box icon-font icon-zuojiantou pull-right"></icon>
+  </view>
+  <view bindtap="navTo" data-url="../form/form" class="items pg-md mg-xs-tb">弹框(toCast)
+    <icon class="icon-box icon-font icon-zuojiantou pull-right"></icon>
+  </view>
+  <view bindtap="navTo" data-url="../text/text" class="items pg-md mg-xs-tb">测试(test)
+    <icon class="icon-box icon-font icon-zuojiantou pull-right"></icon>
+  </view>
+
+</view>

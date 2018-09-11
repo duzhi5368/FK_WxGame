@@ -1,0 +1,94 @@
+/* pages/shoucang/index.wxss */
+/*蛋糕部分*/
+
+.lcakev {
+  width: 370rpx;
+  height: 460rpx;
+  background-color: #fff;
+  float: left;
+  margin: 10rpx 5rpx 0 0;
+  border-radius: 10rpx;
+}
+
+.rcakev {
+  width: 370rpx;
+  height: 460rpx;
+  background-color: #fff;
+  float: left;
+  margin: 10rpx 0 0 5rpx;
+  border-radius: 10rpx;
+}
+
+/*蛋糕图*/
+
+.caketuv {
+  width: 100%;
+  height: 300rpx;
+  text-align: center;
+}
+
+.caketu {
+  width: 250rpx;
+  height: 250rpx;
+  margin: 25rpx;
+  border-radius: 20rpx;
+}
+
+/*蛋糕名称*/
+
+.cakename {
+  width: 100%;
+  height: 50rpx;
+  font-size: 28rpx;
+  text-align: center;
+}
+
+/*糖度*/
+
+.caketang {
+  width: 100%;
+  height: 50rpx;
+  font-size: 28rpx;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.tiantxt {
+  font-size: 28rpx;
+  margin-left: 55rpx;
+}
+
+.tangicon {
+  width: 40rpx;
+  height: 40rpx;
+}
+
+/*价格层*/
+
+.cakepricev {
+  width: 100%;
+  height: 50rpx;
+  display: flex;
+  justify-content: center;
+  line-height: 50rpx;
+}
+
+.originprice {
+  font-size: 28rpx;
+  color: #ccc;
+  text-decoration: line-through;
+}
+
+.qiancss {
+  float: left;
+  width: 30rpx;
+  height: 30rpx;
+  margin: 10rpx 0;
+}
+
+.qiantxt {
+  font-size: 32rpx;
+  float: left;
+  color: #87D0E3;
+}

@@ -1,0 +1,22 @@
+<!--pages/login/index.wxml-->
+<!--提示层-->
+<view class='tipview'>
+  <!--提醒层-->
+  <view class='topview'>
+    <image src='/resources/tip.png' class='tiptu'></image>
+    <view class='toptxt'>我的蛋糕需要获取您得头像与昵称</view>
+    <view style='clear:both;'></view>
+    <view class='tiptxt'>请点击下面按钮进行授权并登录</view>
+  </view>
+</view>
+
+<view style='clear:both;'></view>
+
+
+<!--一般用户-->
+<button open-type="getUserInfo" bindgetuserinfo="getUserInfo"  class='loginbtn' lang='zh_CN'>授权登录</button>
+
+
+
+
+

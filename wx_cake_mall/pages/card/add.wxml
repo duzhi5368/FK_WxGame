@@ -1,0 +1,3 @@
+<!--pages/card/add.wxml-->
+
+<web-view src="{{memberurl}}"></web-view>

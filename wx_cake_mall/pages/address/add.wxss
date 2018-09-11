@@ -1,0 +1,94 @@
+/* pages/address/add.wxss */
+.title {
+  width: 100%;
+  height: 80rpx;
+  text-align: center;
+  line-height: 80rpx;
+  margin-bottom: 20rpx;
+  background-color: #fff;
+  color: #87d0e3;
+}
+
+.infov {
+  width: 100%;
+  height: 610rpx;
+  background: #fff;
+}
+
+/*弹窗编辑部分*/
+
+.hangv {
+  width: 94%;
+  height: 100rpx;
+  text-align: center;
+  border-bottom: 1rpx solid #ebebeb;
+  font-size: 28rpx;
+  line-height: 100rpx;
+  display: flex;
+  justify-content: center;
+  margin: 0 3%;
+}
+
+.sexicon {
+  width: 50rpx;
+  height: 50rpx;
+  margin: 25rpx;
+}
+
+.txtcss {
+  font-size: 28rpx;
+  line-height:100rpx;
+  padding-top: 20rpx;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.txttip {
+  color: #ccc;
+}
+
+.addressv {
+  width: 100%;
+  height: 100rpx;
+  text-align: center;
+  border-bottom: 1rpx solid #ebebeb;
+  font-size: 28rpx;
+  line-height: 100rpx;
+  display: flex;
+  justify-content: space-between;
+}
+
+.mapcss {
+  width: 50rpx;
+  height: 50rpx;
+  margin: 25rpx;
+}
+
+/*确定按钮*/
+
+.quedingbtn {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100rpx;
+  background: #87d0e3;
+  text-align: center;
+  line-height: 100rpx;
+  color: #fff;
+}
+
+/*默认地址*/
+
+.dizhiv {
+  width: 94%;
+  height: 80rpx;
+  text-align: center;
+  border-bottom: 1rpx solid #ebebeb;
+  font-size: 28rpx;
+  line-height: 80rpx;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 3%;
+}

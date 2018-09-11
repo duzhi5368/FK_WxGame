@@ -1,0 +1,7 @@
+/**index.wxss**/
+.container{
+ background: #f5f5f5;
+}
+.items{
+  background: #fff;
+}

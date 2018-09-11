@@ -1,0 +1,83 @@
+/* pages/shop/index.wxss */
+
+page {
+  background-color: #fff;
+}
+
+/*门店部分*/
+.shoplist {
+  height: 580rpx;
+  overflow-y: auto;
+}
+
+/*门店行*/
+
+.shopv {
+  width: 96%;
+  height: 150rpx;
+  margin: 0 2%;
+  border-bottom: 1rpx solid #ebebeb;
+  display: flex;
+  padding: 10rpx 0;
+}
+
+.shopinfo {
+  width: 93%;
+}
+
+.shopname {
+  width: 100%;
+  height: 50rpx;
+  line-height: 60rpx;
+  font-size: 30rpx;
+  font-weight: 600;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.shopaddr {
+  width: 100%;
+  font-size: 23rpx;
+  color: #999;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.chkv {
+  line-height: 150rpx;
+}
+
+.chkicon {
+  width: 40rpx;
+  height: 40rpx;
+}
+
+/*没有门店*/
+
+.noshopv {
+  text-align: center;
+  line-height: 150rpx;
+  color: #999;
+  font-size: 28rpx;
+}
+
+.buttomv {
+  width: 100%;
+  height: 80rpx;
+}
+
+/*底部的确定按钮*/
+
+.btnok {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100rpx;
+  background: #87d0e3;
+  text-align: center;
+  line-height: 100rpx;
+  color: #fff;
+}

@@ -1,0 +1,4 @@
+/* pages/layout/layout.wxss */
+.container{
+ background: #f5f5f5;
+}
