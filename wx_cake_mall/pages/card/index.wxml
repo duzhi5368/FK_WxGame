@@ -1,2 +1,0 @@
-<!--pages/card/index.wxml-->
-<web-view src="{{memberurl}}"></web-view>
