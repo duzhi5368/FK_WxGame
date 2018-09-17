@@ -1,0 +1,10 @@
+<res>
+   <item name="Loading/img_wenzi-5.png" type="Image" compress="0" pack="0" quality="80" props="" picType="0" scale="0"/>
+   <item name="Loading/progress.png" type="ProgressBar" compress="0" pack="0" quality="80" props="" picType="0" scale="0"/>
+   <item name="game/shard.png" type="Image" compress="0" pack="2" quality="80" props="" picType="0" scale="0"/>
+   <item name="game/img_rankBg.png" type="Image" compress="0" pack="0" quality="80" props="sizeGrid=21,26,28,29" picType="0" scale="0"/>
+   <item name="game/img_di1.png" type="Image" compress="0" pack="2" quality="80" props="" picType="0" scale="0"/>
+   <item name="game/img_di2.png" type="Image" compress="0" pack="2" quality="80" props="" picType="0" scale="0"/>
+   <item name="game/img_di3.png" type="Image" compress="0" pack="2" quality="80" props="" picType="0" scale="0"/>
+   <item name="bitmapFont" type="" compress="0" pack="2" quality="80" props="" picType="0" scale="0"/>
+</res>

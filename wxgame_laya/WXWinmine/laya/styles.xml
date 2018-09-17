@@ -1,0 +1,7 @@
+<res>
+   <item name="bitmapFont" type="" compress="0" pack="2" quality="80" props="" picType="0" scale="0"/>
+   <item name="GameUI/img_shijian.png" type="Image" compress="0" pack="0" quality="80" props="sizeGrid=22,24,23,76" picType="0" scale="0"/>
+   <item name="GameUI/img_leishu.png" type="Image" compress="0" pack="0" quality="80" props="sizeGrid=20,23,24,84" picType="0" scale="0"/>
+   <item name="GameUI/img_dikuang.png" type="Image" compress="0" pack="0" quality="80" props="sizeGrid=53,52,54,42" picType="0" scale="0"/>
+   <item name="GameUI/shard.png" type="Image" compress="0" pack="2" quality="80" props="" picType="0" scale="0"/>
+</res>

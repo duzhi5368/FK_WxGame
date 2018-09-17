@@ -1,0 +1,34 @@
+1 .开放域 Texture的bitmap问题
+	if (bitmap){
+		bitmap._addReference();
+	}
+	修改为
+	if (bitmap&& bitmap._addReference){
+		bitmap._addReference();
+	}
+2 .微信小游戏 xml解析
+	game.js 中加入 window.Parser = require("lib/dom_parser.js");
+	文件夹lib 中放入 dom_parser.js  dom.js  sax.js
+	
+3 . font字体解析问题
+
+	/**
+	*资源加载完成的处理函数。
+	*@param data 数据。
+	*/
+	__proto.onLoaded=function(data)
+	方法中 加入生成DomParser对象
+	if (Browser.onMiniGame) {
+		this._data = Utils.parseXMLFromString(this._data);
+	}
+	var bFont=new BitmapFont();
+	bFont.parseFont(this._data,data);
+4. 播放音效报警告
+   
+   SoundManager.playSound=function(url,loops,complete,soundClass,startTime){
+	
+	修改为
+    // if (!Browser.onMiniGame){
+	// 	tSound=Laya.loader.getRes(url);
+	// }
+	tSound=Laya.loader.getRes(url);
