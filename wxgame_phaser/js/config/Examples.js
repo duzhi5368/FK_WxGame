@@ -66,6 +66,10 @@ var examples = [
       {
         name: '微信小飞机',
         state: 'planePreload'
+      },
+      {
+        name: '圈圈连接',
+        state: 'circlePathGame'
       }
     ]
   }
